@@ -416,6 +416,17 @@ ul {
   html, body {
     margin: 20px 0 0;
   }
+  #sidebar h1 {
+    display: inline-block;
+    margin: 85px 0 0;
+  }
+  #sidebar h2 {
+    margin: 0;
+  }
+  .intro {
+    margin-top: 10px;
+  }
+
   .container {
     width: 100%;
   }
