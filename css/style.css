@@ -48,7 +48,7 @@ h1 {
 h2 {
   margin: -5px 0 15px 90px;
   padding: 0;
-  color: #a4a4a4;
+  color: #446CB3;
   font-size: 1.2em;
   line-height: 1.3em;
   font-variant: small-caps;
@@ -56,16 +56,17 @@ h2 {
 }
 
 .intro {
-    margin: 40px 0 25px;
+    margin: 30px 0 25px;
     font-weight: 300;
     font-size: 1.2em;
-    text-align: center;
+    text-align: left;
+    color: #555;
 }
 
 .intro span {
         font-size: 1.2em;
         line-height: 1em;
-        color: #aaa;
+        color: #ccc;
     }
 
 h3 {
@@ -140,9 +141,10 @@ ul {
 }
 
 .content {
-  margin: 30px 0 0;
+  margin: 30px 0;
   padding: 0;
   width: 100%;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -152,16 +154,46 @@ ul {
 
 .content h1 {
   width: 100%;
-  margin: 50px 0 20px;
+  margin: 50px 0 0;
   padding-bottom: 5px;
-  text-align: center;
   font-size: 1.4em;
   font-weight: 300;
-  color: #888;
+  color: #446CB3;
 }
 
 .content h1:first-child {
   margin-top: 6px;
+}
+
+.content hr {
+  margin: 0 0 20px 0;
+  padding: 0;
+  border: none;
+  border-top: solid 1px #D9E6FC;
+}
+
+.row {
+  margin: 0 0 10px;
+}
+
+.row .skill {
+  display: inline-block;
+  margin: 0 0 6px;
+  padding: 1px 10px 0;
+  font-size: 0.9em;
+  background: #446CB3;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.row .expertise {
+  display: inline-block;
+  margin: 0 0 6px;
+  padding: 1px 10px 0;
+  font-size: 0.9em;
+  border: solid 1px #446CB3;
+  color: #446CB3;
+  border-radius: 5px;
 }
 
 .projects {
