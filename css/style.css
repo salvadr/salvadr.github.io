@@ -56,7 +56,7 @@ h2 {
 }
 
 .intro {
-    margin: 30px 0 25px;
+    margin: 30px 0 15px;
     font-weight: 300;
     font-size: 1.2em;
     text-align: left;
@@ -141,7 +141,7 @@ ul {
 }
 
 .content {
-  margin: 30px 0;
+  margin: 10px 0;
   padding: 0;
   width: 100%;
   overflow: hidden;
@@ -166,10 +166,22 @@ ul {
 }
 
 .content hr {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   border: none;
   border-top: solid 1px #D9E6FC;
+}
+
+#stack-container {
+  margin-bottom: 0;
+}
+
+#expertise-container {
+  margin-bottom: 20px;
+}
+
+#work-container hr {
+  margin-bottom: 30px;
 }
 
 .row {
@@ -188,12 +200,26 @@ ul {
 
 .row .expertise {
   display: inline-block;
-  margin: 0 0 6px;
-  padding: 1px 10px 0;
+  margin: 1px 0 4px;
+  padding: 5px 8px 4px;
+  line-height: 1em;
   font-size: 0.9em;
   border: solid 1px #446CB3;
   color: #446CB3;
   border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+.column .title {
+  margin: 3px 0 0;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #35558C;
 }
 
 .projects {
@@ -303,8 +329,6 @@ ul {
 .panel-project {
   display: none;
 }
-
-
   .panel-project a {
     color: #00BB98;
     font-weight: bold;
@@ -388,6 +412,16 @@ ul {
   }
   .content h1:first-child {
     margin-top: 2px;
+  }
+  .column {
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+  #stack-container {
+    margin-bottom: 20px;
+  }
+  #expertise-container {
+    margin-bottom: 40px;
   }
   #sidebar {
     font-size: 0.9em;
