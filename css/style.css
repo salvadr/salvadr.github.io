@@ -330,11 +330,14 @@ header {
 
 .panel-content {
   margin: 0 40px;
+  padding: 10px 10px 20px;
   background: #fafafa;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .panel-description {
+  padding-top: 0;
   float: left;
   width: 50%;
   font-weight: 300;
