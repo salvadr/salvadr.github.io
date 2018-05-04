@@ -59,7 +59,7 @@ h2 {
 
 #buttons {
   padding: 6px 10px 1px;
-  width: 85px;
+  width: 51px;
   margin: 0 auto;
   background: #f7f7f7;
   border-radius: 5px;
@@ -79,17 +79,17 @@ h2 {
 
 #linkedin span {
   display: inline-block;
-  padding: 2px 6px 0;
+  padding: 2px 5px 0;
   color: #fff;
-  font-size: 0.7em;
+  font-size: 16px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 700;
   vertical-align: top;
 }
 
 #email {
   float: left;
-  margin: 0 5px 0 0;
+  margin: 0 3px 0 0;
   padding: 0;
   width: 24px;
   text-decoration: none;
@@ -109,7 +109,7 @@ h2 {
 
 header {
   width: 100%;
-  margin: 80px 0 95px;
+  margin: 80px 0 150px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -128,8 +128,8 @@ header {
 
 .content h1 {
   width: 100%;
-  margin: 50px 0 30px;
-  text-align: left;
+  margin: 50px 0 20px;
+  text-align: center;
   padding-bottom: 5px;
   font-size: 1.2em;
   font-weight: 400;
@@ -148,19 +148,21 @@ header {
 }
 
 #stack-container {
-  margin-bottom: 30px;
-}
-
-#expertise-container {
   margin-bottom: 80px;
 }
 
+#expertise-container {
+  margin-bottom: 180px;
+}
+
 #work-container {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 .row {
   margin: 0 0 15px;
+  padding: 30px 0 0;
+  border-top: solid 1px #eee;
 }
 
 .row .skillset,
@@ -170,14 +172,13 @@ header {
 
 .row .skill {
   display: inline-block;
-  padding: 0 12px 8px 0;
   color: #747E7D;
   font-weight: 300;
 }
 
 .row .expertise {
   display: inline-block;
-  padding: 0 12px 8px 0;
+  padding: 0 0 8px 0;
   color: #747E7D;
   font-weight: 300;
 }
@@ -198,7 +199,8 @@ header {
 }
 
 .projects {
-  padding: 0;
+  padding: 30px 0 0;
+  border-top: solid 1px #eee;
   overflow: visible;
 }
 
@@ -252,6 +254,7 @@ header {
 .project-description {
   margin: 15px 0 0;
   padding: 0;
+  font-size: 0.9em;
   font-weight: 300;
 }
 
@@ -261,7 +264,7 @@ header {
   line-height: 1.5em;
   font-size: 0.8em;
   font-weight: 300;
-  color: #aaa;
+  color: #888;
 }
 
 #shade {
@@ -289,19 +292,25 @@ header {
   background: #fff;
   box-shadow: -1px 0 30px #ddd;
   overflow-y: scroll;
+  border-radius: 5px;
 }
 
 .panel-project {
   display: none;
 }
   .panel-project a {
-    color: #009B72;
-    font-weight: bold;
+    color: #3083E3;
+    font-weight: 400;
     text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .panel-project a:hover {
+    color: #2567B3;
   }
 
 .panel-header {
-  padding: 40px 20px 20px 40px;
+  padding: 40px 20px 30px 40px;
   overflow: hidden;
 }
 
@@ -334,6 +343,10 @@ header {
   box-sizing: border-box;
 }
 
+.panel-description strong {
+  font-size: 1.1em;
+}
+
 .panel-tech {
   color: #888;
 }
@@ -355,6 +368,7 @@ header {
   right: 40px;
   color: #ccc;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .panel-project {
@@ -387,9 +401,12 @@ header {
     box-sizing: border-box;
   }
   #stack-container {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
   #expertise-container {
+    margin-bottom: 140px;
+  }
+  #work-container {
     margin-bottom: 40px;
   }
   #sidebar {
