@@ -267,11 +267,11 @@ header .btn {
     margin: 0;
   }
   .project-img-wrapper {
-    height: 260px;
+    height: 250px;
   }
   .project-img {
-    height: 234px;
-    background-size: 100% auto
+    height: 224px;
+    background-size: 100% auto;
   }
   .project-content {
     padding: 20px 10px 0;
