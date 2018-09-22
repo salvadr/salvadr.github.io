@@ -205,6 +205,10 @@ header .btn {
 #oka .project-img {
   background-image: url(../img/1kangels.png);
 }
+#teambound .project-img {
+  background-image: url(../img/teambound.png);
+  background-size: auto 100%;
+}
 #hyperform .project-img {
   background-image: url(../img/hyperform.png);
 }
@@ -216,9 +220,13 @@ header .btn {
 }
 #easynube .project-img {
   background-image: url(../img/easynube.png);
+  background-size: auto 100%;
 }
 #lingojump .project-img {
   background-image: url(../img/lingojump.png);
+}
+#aupairtv .project-img {
+  background-image: url(../img/aupairtv.png);
 }
 #gmatanalytics .project-img {
   background-image: url(../img/gmatanalytics.png);
