@@ -1,7 +1,7 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 100px 0 0;
   font-family: "Oxygen", Arial, Helvetica, sans-serif;
   color: #404E4D;
   font-weight: 400;
@@ -9,19 +9,21 @@ body {
 }
 
 header {
-  display: flex;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
   width: 100%;
-  max-width: 430px;
-  margin: 120px auto;
-  padding: 0;
+  padding: 10px 40px;
   box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 5px 20px 3px #f0f0f0;
 }
 
 header h1 {
   display: block;
   margin: 0 0 2px;
   padding: 0;
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 700;
 }
 
@@ -30,41 +32,51 @@ header h2 {
   margin: 0 0 14px;
   padding: 0;
   color: #A6ACB3;
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 300;
 }
 
-header .left,
+header .left {
+  display: inline-block;
+}
 header .right {
   display: inline-block;
+  padding: 15px 0 0;
+  vertical-align: top;
 }
 
 .avatar {
   display: inline-block;
-  margin: 4px 20px 0 0;
-  width: 90px;
-  height: 90px;
+  margin: 4px 10px 0 0;
+  width: 75px;
+  height: 75px;
   background: url(../img/me.jpg) 0px center;
   background-size: 100px 100px;
   border-radius: 45px;
 }
 
+header #buttons {
+  float: right;
+  margin: 22px 0 0;
+}
+
 header .btn {
   display: inline-block;
-  margin: 0 3px 0 0;
-  padding: 3px 8px;
+  margin: 0 10px 0 0;
+  padding: 8px 20px;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 700;
   text-decoration: none;
   border-radius: 3px;
+  box-shadow: 0 1px 3px 1px #ddd;
 }
 
 #linkedin {
-  background: #4A8CFF;
+  background: #1278B3;
 }
 #email {
-  padding: 2px 8px 3px;
+  padding: 7px 20px 8px;
   color: #777;
   border: solid 1px #aaa;
   box-sizing: border-box;
@@ -77,7 +89,7 @@ header .btn {
   position: relative;
   margin: 0 auto;
   padding: 0 0 80px;
-  width: 960px;
+  width: 1200px;
   overflow: visible;
 }
 
@@ -90,18 +102,19 @@ header .btn {
   position: relative;
   display: flex;
   width: 100%;
-  margin: 0 20px 100px 0;
-  padding: 15px;
+  min-height: 480px;
+  margin: 0 20px 65px 0;
+  padding: 15px 15px 80px;
   box-sizing: border-box;
+  border-bottom: solid 1px #f5f5f5;
 }
 
 .project-img-wrapper {
   position: relative;
-  width: 480px;
-  height: 346px;
+  width: 547px;
+  height: 392px;
   padding: 26px 0 0;
   background: #fafafa;
-  box-shadow: 0 2px 4px 1px #e0e0e0;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -131,20 +144,21 @@ header .btn {
 }
 
 .project-img {
-  width: 480px;
-  height: 320px;
-  background-size: 480px auto;
+  width: 540px;
+  height: 365px;
+  background-size: 540px auto;
   box-sizing: border-box;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
 .project-content {
-  padding: 0 30px 30px;
+  padding: 30px 0 30px 60px;
+  width: 480px;
 }
 .project-content h4 {
   margin: 12px 0 10px;
-  font-size: 1.1em;
+  font-size: 1.4em;
   font-weight: 700;
 }
 .project-link,
@@ -190,30 +204,116 @@ header .btn {
 
 }
 
+
+.project:nth-child(odd) .project-img-wrapper {
+  transform: perspective(1000px) rotateY(15deg);
+  transform-style: preserve-3d;
+  border-left: solid 6px #eee;
+  border-bottom: solid 1px #eee;  
+  box-shadow: 5px 20px 50px -15px #ddd;
+}
+
+.project:nth-child(even) .project-img-wrapper {
+  position: absolute;
+  right: 45px;
+  transform: perspective(700px) rotateY(-15deg);
+  transform-style: preserve-3d;
+  border-right: solid 6px #eee;
+  border-bottom: solid 1px #eee;  
+  box-shadow: -5px 20px 50px -15px #ddd;
+}
+
+.project:nth-child(even) .project-content {
+  width: 480px;
+}
+
 #pactly .project-img {
   background-image: url(../img/pactly.png);
+}
+/* #pactly .project-img-wrapper {
+  border-left: solid 6px rgb(43, 151, 238, 0.5);
+ 
+  border-bottom: solid 1px rgb(43, 151, 238, 0.5);
+  box-shadow: 5px 20px 50px -15px rgb(43, 151, 238, 0.2);
+} */
+#pactly a {
+  color: #2B97EE;
+  border-color: #2B97EE;
 }
 #sjr .project-img {
   background-image: url(../img/sjr.png);
 }
+/* #sjr .project-img-wrapper {
+  border-right: solid 6px #FED1E3;
+  border-bottom: solid 1px #FED1E3;  
+  box-shadow: -5px 20px 50px -15px rgb(254, 209, 227, 0.7);
+} */
+#sjr a {
+  color: #D9155D;
+  border-color: #D9155D;
+}
+
 #ulytics .project-img {
   background-image: url(../img/umg.png);
 }
+/* #ulytics .project-img-wrapper {
+  border-left: solid 6px rgb(39, 234, 199, 0.5);
+  border-bottom: solid 1px rgb(39, 234, 199, 0.5);
+  box-shadow: 5px 20px 50px -15px rgb(39, 234, 199, .2)
+} */
+#ulytics a {
+  color: #02cea9;
+  border-color: #02cea9;
+}
+
+
 #cfl .project-img {
   background-image: url(../img/cfl.png);
 }
+/* #cfl .project-img-wrapper {
+  border-right: solid 6px rgb(25, 134, 251, 0.5);
+  border-bottom: solid 1px rgb(25, 134, 251, 0.5);  
+  box-shadow: -5px 20px 50px -15px rgb(25, 134, 251, 0.3);
+} */
+#cfl a {
+  color: rgb(25, 134, 251);
+  border-color: rgb(25, 134, 251);
+}
+
+
+
 #oka .project-img {
   background-image: url(../img/1kangels.png);
 }
+/* #oka .project-img-wrapper {
+  border-left: solid 6px rgb(178, 155, 130, 0.5);
+  border-bottom: solid 1px rgb(178, 155, 130, 0.5);
+  box-shadow: 5px 20px 50px -15px rgb(178, 155, 130, 0.3);
+} */
+#oka a {
+  color: rgb(178, 155, 130);
+  border-color: rgb(178, 155, 130);
+}
+
+#growfighters .project-img {
+  background-image: url(../img/growfighters.png);
+}
+/* #growfighters .project-img-wrapper {
+  border-right: solid 6px rgb(29, 188, 154, 0.5);
+  border-bottom: solid 1px rgb(29, 188, 154, 0.5);  
+  box-shadow: -5px 20px 50px -15px rgb(29, 188, 154, 0.2);
+} */
+#growfighters a {
+  color: rgb(29, 188, 154);
+  border-color: rgb(29, 188, 154);
+}
+
 #teambound .project-img {
   background-image: url(../img/teambound.png);
   background-size: auto 100%;
 }
 #hyperform .project-img {
   background-image: url(../img/hyperform.png);
-}
-#growfighters .project-img {
-  background-image: url(../img/growfighters.png);
 }
 #quibly .project-img {
   background-image: url(../img/quibly.png);
@@ -232,18 +332,64 @@ header .btn {
   background-image: url(../img/gmatanalytics.png);
 }
 
+
+@media screen and (max-width: 1280px) {
+  html, body {
+    padding-top: 80px;
+  }
+  header {
+    padding: 4px 20px;
+  }
+  header .left {
+    display: inline-block;
+  }
+  header .right {
+    display: inline-block;
+    padding: 10px 0 0;
+    vertical-align: top;
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
+    background-size: 80px 80px;
+  }
+  header #buttons {
+    margin: 17px 0 0;
+  }
+  header h1 {
+    display: block;
+    margin: 0 0 1px;
+    padding: 0;
+    font-size: 1.2em;
+  }
+  
+  header h2 {
+    display: block;
+    margin: 0 0 14px;
+    padding: 0;
+    font-size: 0.9em;
+  }
+
+}
+
 @media screen and (max-width: 960px) {
   html, body {
     margin: 0;
+    padding: 0;
   }
 
   .container {
     width: 100%;
   }
   header {
+    position: relative;
     display: block;
+    margin: 0 0 50px;
+    padding: 20px 0;
     max-width: 100%;
     text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
   }
   header .left,
   header .right {
@@ -255,8 +401,16 @@ header .btn {
   header h2 {
     font-size: 1.1em;
   }
+
+  header #buttons {
+    margin: 50px 0 0;
+    float: none;
+  }
   .avatar {
     margin: 0 0 20px;
+    width: 90px;
+    height: 90px;
+    background-size: 100px 100px;
   }
   .content {
     width: 100%;
@@ -276,6 +430,7 @@ header .btn {
   }
   .project-img-wrapper {
     height: 250px;
+    margin-bottom: 20px;
   }
   .project-img {
     height: 224px;
@@ -284,5 +439,11 @@ header .btn {
   .project-content {
     padding: 20px 10px 0;
   }
-
+  .project:nth-child(even) .project-img-wrapper {
+    position: relative;
+    right: auto;
+  }
+  .project:nth-child(even) .project-content {
+    width: 100%;
+  }
 }
