@@ -15,8 +15,8 @@ header {
   width: 100%;
   padding: 10px 40px;
   box-sizing: border-box;
-  background: #fff;
-  box-shadow: 0 5px 20px 3px #f0f0f0;
+  background: #f2f3f5;
+  //box-shadow: 0 5px 20px 3px #;
 }
 
 header h1 {
@@ -111,10 +111,10 @@ header .btn {
 
 .project-img-wrapper {
   position: relative;
-  width: 547px;
+  width: 540px;
   height: 392px;
   padding: 26px 0 0;
-  background: #fafafa;
+  background: #e9edf2;
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -206,21 +206,21 @@ header .btn {
 
 
 .project:nth-child(odd) .project-img-wrapper {
-  transform: perspective(1000px) rotateY(15deg);
-  transform-style: preserve-3d;
-  border-left: solid 6px #eee;
+  //transform: perspective(1000px) rotateY(15deg);
+  //transform-style: preserve-3d;
+  //border-left: solid 6px #eee;
   border-bottom: solid 1px #eee;  
-  box-shadow: 5px 20px 50px -15px #ddd;
+  box-shadow: 5px 20px 50px -15px #dce2e8, 0 0 0 1px #f2f5f7;
 }
 
 .project:nth-child(even) .project-img-wrapper {
   position: absolute;
   right: 45px;
-  transform: perspective(700px) rotateY(-15deg);
-  transform-style: preserve-3d;
-  border-right: solid 6px #eee;
+  //transform: perspective(700px) rotateY(-15deg);
+  //transform-style: preserve-3d;
+  //border-right: solid 6px #eee;
   border-bottom: solid 1px #eee;  
-  box-shadow: -5px 20px 50px -15px #ddd;
+  box-shadow: -5px 20px 50px -15px #dce2e8, 0 0 0 1px #f2f5f7;
 }
 
 .project:nth-child(even) .project-content {
@@ -240,6 +240,36 @@ header .btn {
   color: #2B97EE;
   border-color: #2B97EE;
 }
+
+#ronda {
+	min-height: 520px;
+}
+
+#ronda .project-img {
+	height: 464px;
+  width: 260px;
+  background-image: url(../img/ronda.png);
+	background-size: 100%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+#ronda .project-img-wrapper {
+	width: 262px;
+	height: 484px;
+	margin: -30px 200px 0 0;
+	padding: 0 1px 20px;
+	border-radius: 15px;
+	background: #e9edf2;
+}
+#ronda .project-img-btns {
+	display: none;
+}
+
+#ronda a {
+  color: #3443A2;
+  border-color: #3443A2;
+}
+
 #sjr .project-img {
   background-image: url(../img/sjr.png);
 }
